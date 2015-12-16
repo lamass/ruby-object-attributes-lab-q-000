@@ -1,5 +1,14 @@
-
 class Person
+  def intialize(race)
+    @race = race
+  end
+  def race=(race)
+    @race = race
+  end
+  def race
+    @race
+  end
+
   def name=(some_name)
     @name = some_name
   end
@@ -13,3 +22,5 @@ class Person
     @job
   end
 end
+cust = Person.new("Asian")
+puts cust.race

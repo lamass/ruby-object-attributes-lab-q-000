@@ -5,6 +5,9 @@ class Dog
   def name
     @name
   end
+  def initialize(breed)
+    @breed = breed
+  end
   def breed=(some_breed)
     @breed = some_breed
   end
@@ -12,3 +15,7 @@ class Dog
     @breed
   end
 end
+
+lassie = Dog.new("Collie")
+
+puts lassie.breed
